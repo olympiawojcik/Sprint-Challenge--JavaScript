@@ -44,13 +44,13 @@ A closure is a combination of a function and the environment within which that f
 
 The 'this' keyword is simply a pointer to an object, allowing us to reference an object without having to refer to it's name. In order to figure out what object 'this' is pointing to, we need to understand its execution context, or the environment where our function is being called/invoked. There are 4 rules to understanding the binding of 'this':
 
-1) Window/Global Object Binding - When a function is declared in the global scope, the value of 'this' is the global object (window in the browser, global/console in node)
+-Window/Global Object Binding - When a function is declared in the global scope, the value of 'this' is the global object (window in the browser, global/console in node)
 
-2) Implicit/Automatic Binding- When a method is invoked by a preceding dot, 'this' points to the object on the left of the dot.
+-Implicit/Automatic Binding- When a method is invoked by a preceding dot, 'this' points to the object on the left of the dot.
 
-3) New Binding- When we build new objects using constructor functions, 'this' refers to the specific *instance* of the object that's created and returned by the constructor function.
+-New Binding- When we build new objects using constructor functions, 'this' refers to the specific *instance* of the object that's created and returned by the constructor function.
 
-4) Explicit Binding- When we write methods that can be used on different object's, we can explicity define what 'this' points to using Javascript's call or apply method. 
+-Explicit Binding- When we write methods that can be used on different object's, we can explicity define what 'this' points to using Javascript's call or apply method. 
 
 
 5. Why do we need super() in an extended class?
